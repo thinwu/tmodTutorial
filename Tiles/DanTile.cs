@@ -12,12 +12,7 @@ namespace tutorial.Tiles
             Main.tileSolid[Type] = true; 
             Main.tileMergeDirt[Type] = true;
             Main.tileLighted[Type] = true;
-            Main.tileLavaDeath[Type] = true;
-            DustType = DustID.Platinum;
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("DanTile");
-            AddMapEntry(new Color(100,150,200),name);
-            MinPick = 10;
+            AddMapEntry(new Color(100,150,200));
         }
         public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)
         {
